@@ -5,16 +5,18 @@ import java.util.Collections;
 
 public class RadixSort {
     public static ArrayList<Integer> radixSort(ArrayList<Integer> array) {
-        if (array.size() > 0) {
-            int max = Collections.max(array);
-            for (int exp = 1; max / exp > 0; exp *= 10) {
-                countSort(array, array.size(), exp);
-            }
+        if (array.size() == 0) {
+            return array;
+        }
+
+        int max = Collections.max(array);
+        for (int exp = 1; max / exp > 0; exp *= 10) {
+            countSort(array, array.size(), exp);
         }
         return array;
     }
 
-    public static void countSort(ArrayList<Integer> array, int n, int exp){
+    public static void countSort(ArrayList<Integer> array, int n, int exp) {
         int sorted[] = new int[n];
         int count[] = new int[10];
 
