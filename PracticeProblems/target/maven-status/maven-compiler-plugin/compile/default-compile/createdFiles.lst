@@ -1,1 +1,13 @@
 PracticeProblemsDriver.class
+sorting/tough/HeapSort.class
+sorting/verytough/SortedReversals.class
+sorting/easy/BubbleSort.class
+sorting/tough/SortStrings.class
+sorting/verytough/SortedMerge.class
+sorting/verytough/MergeSort.class
+sorting/tough/RadixSort.class
+sorting/tough/SortCounts.class
+sorting/medium/SortThree.class
+sorting/easy/SelectionSort.class
+sorting/medium/QuickSort.class
+sorting/easy/InsertionSort.class
