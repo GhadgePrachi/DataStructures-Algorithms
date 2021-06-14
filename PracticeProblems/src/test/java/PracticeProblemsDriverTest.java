@@ -3,6 +3,7 @@ import org.junit.Test;
 public class PracticeProblemsDriverTest {
     @Test
     public void testMain() {
-        PracticeProblemsDriver.main();
+        String args [] = {};
+        PracticeProblemsDriver.main(args);
     }
 }
