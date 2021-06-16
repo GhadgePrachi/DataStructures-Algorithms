@@ -8,10 +8,12 @@ recursion/medium/StaircaseTraversalTest.class
 recursion/medium/PowerSetTest.class
 recursion/easy/ProductSumTest.class
 sorting/easy/InsertionSortTest.class
+recursion/medium/ValidStartingCityTest.class
 sorting/medium/QuickSortTest.class
 PracticeProblemsDriverTest.class
 recursion/medium/PermutationTest.class
 sorting/tough/SortCharactersTest.class
+searching/BinarySearchTest.class
 sorting/tough/HeapSortTest.class
 sorting/verytough/SortedReversalsTest.class
 sorting/medium/SortThreeTest.class
