@@ -1,8 +1,10 @@
 recursion/easy/NthFibonacci.class
 PracticeProblemsDriver.class
 sorting/tough/HeapSort.class
+searching/BinarySearch.class
 recursion/tough/GenerateDivTags.class
 sorting/verytough/SortedReversals.class
+recursion/medium/ValidStartingCity.class
 recursion/medium/StaircaseTraversal.class
 sorting/easy/BubbleSort.class
 recursion/tough/InterweavingStrings.class

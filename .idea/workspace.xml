@@ -1,11 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4edaddc-215b-4d05-9937-331f26d69d88" name="Default Changelist" comment="" />
+    <list default="true" id="f4edaddc-215b-4d05-9937-331f26d69d88" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/PracticeProblems.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/easy/NthFibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/easy/ProductSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/medium/Permutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/medium/PhoneNumberMnemonics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/medium/PowerSet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/medium/StaircaseTraversal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/medium/ValidStartingCity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/tough/AmbiguousMeasurements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/tough/GenerateDivTags.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/recursion/tough/InterweavingStrings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/easy/NthFibonacciTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/easy/ProductSumTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/medium/PermutationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/medium/PhoneNumberMnemonicsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/medium/PowerSetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/medium/StaircaseTraversalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/medium/ValidStartingCityTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/tough/AmbiguousMeasurementsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/tough/GenerateDivTagsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/recursion/tough/InterweavingStringsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/easy/NthFibonacci.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/easy/ProductSum.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/medium/Permutation.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/medium/PhoneNumberMnemonics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/medium/PowerSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/medium/StaircaseTraversal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/medium/ValidStartingCity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/tough/AmbiguousMeasurements.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/tough/GenerateDivTags.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/recursion/tough/InterweavingStrings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.easy.NthFibonacciTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.easy.ProductSumTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.medium.PermutationTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.medium.PhoneNumberMnemonicsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.medium.PowerSetTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.medium.StaircaseTraversalTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.tough.AmbiguousMeasurementsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.tough.GenerateDivTagsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-recursion.tough.InterweavingStringsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.easy.NthFibonacciTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.easy.ProductSumTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.medium.PermutationTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.medium.PhoneNumberMnemonicsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.medium.PowerSetTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.medium.StaircaseTraversalTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.tough.AmbiguousMeasurementsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.tough.GenerateDivTagsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/recursion.tough.InterweavingStringsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/easy/NthFibonacciTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/easy/ProductSumTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/medium/PermutationTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/medium/PhoneNumberMnemonicsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/medium/PowerSetTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/medium/StaircaseTraversalTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/medium/ValidStartingCityTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/tough/AmbiguousMeasurementsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/tough/GenerateDivTagsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/recursion/tough/InterweavingStringsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/PracticeProblems-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/PracticeProblems-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.easy.BubbleSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.easy.BubbleSortTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.easy.InsertionSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.easy.InsertionSortTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.medium.QuickSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.medium.QuickSortTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.medium.SortThreeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.medium.SortThreeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.tough.HeapSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.tough.HeapSortTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.tough.RadixSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.tough.RadixSortTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.verytough.SortedReversalsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-sorting.verytough.SortedReversalsTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.easy.BubbleSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.easy.BubbleSortTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.easy.InsertionSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.easy.InsertionSortTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.easy.SelectionSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.easy.SelectionSortTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.medium.QuickSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.medium.QuickSortTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.medium.SortThreeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.medium.SortThreeTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.HeapSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.HeapSortTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.RadixSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.RadixSortTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.SortCharactersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.SortCharactersTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.SortCountsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.tough.SortCountsTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.verytough.MergeSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.verytough.MergeSortTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.verytough.SortedMergeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.verytough.SortedMergeTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.verytough.SortedReversalsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/sorting.verytough.SortedReversalsTest.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,6 +123,117 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+  </component>
+  <component name="RunManager" selected="JUnit.All in PracticeProblems">
+    <configuration name="All in PracticeProblems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeProblems" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchMagicIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeProblems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="searching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="searching" />
+      <option name="MAIN_CLASS_NAME" value="searching.BinarySearchMagicIndexTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchMagicIndexTest.testBinarySearchMagicIndexSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeProblems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="searching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="searching" />
+      <option name="MAIN_CLASS_NAME" value="searching.BinarySearchMagicIndexTest" />
+      <option name="METHOD_NAME" value="testBinarySearchMagicIndexSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchUnboundedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeProblems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="searching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="searching" />
+      <option name="MAIN_CLASS_NAME" value="searching.BinarySearchUnboundedTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TaskAssignmentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeProblems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="greedy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="greedy" />
+      <option name="MAIN_CLASS_NAME" value="greedy.TaskAssignmentTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maven clean install" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="install" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/PracticeProblems" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in PracticeProblems" />
+        <item itemvalue="JUnit.BinarySearchUnboundedTest" />
+        <item itemvalue="JUnit.BinarySearchMagicIndexTest" />
+        <item itemvalue="JUnit.BinarySearchMagicIndexTest.testBinarySearchMagicIndexSuccess" />
+        <item itemvalue="JUnit.TaskAssignmentTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -41,5 +257,29 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$searching_in_PracticeProblems.ic" NAME="searching in PracticeProblems Coverage Results" MODIFIED="1623801979027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>searching.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$QuickSelectTest.ic" NAME="QuickSelectTest Coverage Results" MODIFIED="1623801957008" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>sorting.medium.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$FindThreeLargestTest.ic" NAME="FindThreeLargestTest Coverage Results" MODIFIED="1623787318039" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>heaps.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$BinarySearchShiftedTest_testBinarySearchShiftedSuccess.ic" NAME="BinarySearchShiftedTest.testBinarySearchShiftedSuccess Coverage Results" MODIFIED="1623803820462" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>searching.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$BinarySearchTest.ic" NAME="BinarySearchTest Coverage Results" MODIFIED="1623783062060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>searching.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$FindThreeLargestTest_testFindThreeLargestSuccess.ic" NAME="FindThreeLargestTest.testFindThreeLargestSuccess Coverage Results" MODIFIED="1623787483822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>heaps.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$BinarySearchShiftedTest.ic" NAME="BinarySearchShiftedTest Coverage Results" MODIFIED="1623804362249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>searching.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$All_in_PracticeProblems.ic" NAME="All in PracticeProblems Coverage Results" MODIFIED="1623804390057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
