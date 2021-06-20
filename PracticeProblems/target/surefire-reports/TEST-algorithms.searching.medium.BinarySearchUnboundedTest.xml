@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="algorithms.searching.medium.BinarySearchUnboundedTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="algorithms.searching.medium.BinarySearchUnboundedTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.1.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -58,6 +58,6 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="algorithms.searching.medium.BinarySearchUnboundedTest" name="testBinarySearchUnboundedSuccess" time="0.015"/>
-  <testcase classname="algorithms.searching.medium.BinarySearchUnboundedTest" name="testBinarySearchUnboundedFailure" time="0.001"/>
+  <testcase classname="algorithms.searching.medium.BinarySearchUnboundedTest" name="testBinarySearchUnboundedSuccess" time="0.003"/>
+  <testcase classname="algorithms.searching.medium.BinarySearchUnboundedTest" name="testBinarySearchUnboundedFailure" time="0"/>
 </testsuite>
