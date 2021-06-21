@@ -4,86 +4,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4edaddc-215b-4d05-9937-331f26d69d88" name="Default Changelist" comment="Adding algorithms with unit tests and reorganizing the project">
+    <list default="true" id="f4edaddc-215b-4d05-9937-331f26d69d88" name="Default Changelist" comment="Adding dynamic programming and other algorithms with unit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PracticeProblems/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/PracticeProblems-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/PracticeProblems-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/PracticeProblemsDriverTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/PracticeProblemsDriverTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-PracticeProblemsDriverTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-PracticeProblemsDriverTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.greedy.medium.TaskAssignmentTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.greedy.medium.TaskAssignmentTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.easy.ProductSumTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.easy.ProductSumTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.medium.PermutationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.medium.PermutationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.medium.PhoneNumberMnemonicsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.medium.PhoneNumberMnemonicsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.medium.ValidStartingCityTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.medium.ValidStartingCityTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.AmbiguousMeasurementsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.AmbiguousMeasurementsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.InterweavingStringsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.InterweavingStringsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.NthFibonacciTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.NthFibonacciTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.StaircaseTraversalTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.recursion.tough.StaircaseTraversalTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.easy.BinarySearchBoundsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.easy.BinarySearchBoundsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchInSortedMatrixTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchInSortedMatrixTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchShiftedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchShiftedTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchSpacesTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchSpacesTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchUnboundedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.medium.BinarySearchUnboundedTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.tough.BinarySearchMinInShiftedTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.tough.BinarySearchMinInShiftedTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.tough.BinarySearchRangeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.tough.BinarySearchRangeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.tough.BinarySearchSquaresTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.tough.BinarySearchSquaresTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.verytough.BinarySearchKthSmallestInTableTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.verytough.BinarySearchKthSmallestInTableTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.verytough.BinarySearchKthSmallestPairDistanceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.verytough.BinarySearchKthSmallestPairDistanceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.verytough.BinarySearchKthSmallestTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.searching.verytough.BinarySearchKthSmallestTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.easy.BubbleSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.easy.BubbleSortTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.easy.InsertionSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.easy.InsertionSortTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.easy.SelectionSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.easy.SelectionSortTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.medium.QuickSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.medium.QuickSortTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.HeapSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.HeapSortTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.RadixSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.RadixSortTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.SortCharactersTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.SortCharactersTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.SortCountsTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.tough.SortCountsTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.verytough.MergeSortTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.verytough.MergeSortTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.verytough.SortedMergeTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/TEST-algorithms.sorting.verytough.SortedMergeTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.greedy.easy.ClassPhotosTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.greedy.easy.ClassPhotosTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.greedy.easy.TandemBicycleTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.greedy.easy.TandemBicycleTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.greedy.medium.TaskAssignmentTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.greedy.medium.TaskAssignmentTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.easy.ProductSumTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.easy.ProductSumTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.PermutationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.PermutationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.PhoneNumberMnemonicsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.PhoneNumberMnemonicsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.PowerSetTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.PowerSetTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.ValidStartingCityTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.medium.ValidStartingCityTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.tough.AmbiguousMeasurementsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.tough.AmbiguousMeasurementsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.tough.InterweavingStringsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.tough.InterweavingStringsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.tough.StaircaseTraversalTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.recursion.tough.StaircaseTraversalTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.easy.BinarySearchBoundsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.easy.BinarySearchBoundsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.easy.BinarySearchTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.easy.BinarySearchTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchInSortedMatrixTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchInSortedMatrixTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchShiftedTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchShiftedTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchSpacesTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchSpacesTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchUnboundedTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.medium.BinarySearchUnboundedTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchInsertPositionTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchInsertPositionTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchMagicIndexTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchMagicIndexTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchMinInShiftedTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchMinInShiftedTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchNextGreatestTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchNextGreatestTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchRangeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchRangeTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchSquaresTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.tough.BinarySearchSquaresTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.verytough.BinarySearchKthSmallestInTableTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.verytough.BinarySearchKthSmallestInTableTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.verytough.BinarySearchKthSmallestPairDistanceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.verytough.BinarySearchKthSmallestPairDistanceTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.verytough.BinarySearchKthSmallestTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.searching.verytough.BinarySearchKthSmallestTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.easy.BubbleSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.easy.BubbleSortTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.easy.InsertionSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.easy.InsertionSortTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.easy.SelectionSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.easy.SelectionSortTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.medium.QuickSelectTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.medium.QuickSelectTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.medium.QuickSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.medium.QuickSortTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.HeapSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.HeapSortTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.RadixSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.RadixSortTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.SortCharactersTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.SortCharactersTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.SortCountsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.tough.SortCountsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.verytough.MergeSortTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.verytough.MergeSortTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.verytough.SortedMergeTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.verytough.SortedMergeTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.verytough.SortedReversalsTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/algorithms.sorting.verytough.SortedReversalsTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/datastructures.heaps.FindThreeLargestTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/surefire-reports/datastructures.heaps.FindThreeLargestTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/GraphTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/GraphTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/LevenshteinDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/LevenshteinDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/MinNumberOfCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/MinCoinsToMakeChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/NumberOfWaysToMakeCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/TotalWaysToMakeChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/MaxWeightKnapsack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/LongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxDiskStacking.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxTowerOfDisks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/NumberOfPie.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/PiePartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/verytough/LongestStringChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/datastructures/strings/verytough/LongestStringChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/verytough/MaximizeExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/MaximizeExpression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/verytough/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/Transactions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/searching/easy/BinarySearchBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/searching/tough/BinarySearchBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/GraphTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/GraphTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/LevenshteinDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/LevenshteinDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MinNumberOfCoinsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MinCoinsToMakeChangeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/NumberOfWaysToMakeCoinsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/TotalWaysToMakeChangeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/KnapsackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MaxWeightKnapsackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/LongestCommonSubsequenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/LongestCommonSubsequenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/MaxDiskStackingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/MaxTowerOfDisksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/NumberOfPieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/PiePartitionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/verytough/LongestStringChainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/datastructures/strings/verytough/LongestStringChainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/verytough/MaximizeExpressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/MaximizeExpressionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/verytough/TransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/TransactionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/searching/easy/BinarySearchBoundsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/searching/easy/BinarySearchBadVersionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/NumberOfPie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/verytough/LongestStringChain$StringChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/verytough/LongestStringChain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/searching/easy/BinarySearchBounds.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/medium/NumberOfPieTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/verytough/LongestStringChainTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/searching/easy/BinarySearchBoundsTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,87 +84,88 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="algorithms.dynamicprogramming.tough" />
-      <recent name="algorithms.dynamicprogramming.medium" />
-      <recent name="algorithms.dynamicprogramming.verytough" />
       <recent name="algorithms.searching.tough" />
-      <recent name="algorithms.recursion.tough" />
+      <recent name="datastructures.strings.verytough" />
+      <recent name="datastructures.strings" />
+      <recent name="algorithms.dynamicprogramming.verytough" />
+      <recent name="algorithms.dynamicprogramming.medium" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.maven clean install">
-    <configuration name="BinarySearchKthSmallestInTableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MinSplitSubArraysTest.testMinSplitSubArraysSuccess">
+    <configuration name="MinSplitSubArraysTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PracticeProblems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.searching.verytough.*" />
+          <option name="PATTERN" value="algorithms.dynamicprogramming.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.searching.verytough" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.searching.verytough.BinarySearchKthSmallestInTableTest" />
+      <option name="PACKAGE_NAME" value="algorithms.dynamicprogramming.medium" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.dynamicprogramming.medium.MinSplitSubArraysTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchKthSmallestPairDistanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MinSplitSubArraysTest.testMinSplitSubArraysSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PracticeProblems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.searching.verytough.*" />
+          <option name="PATTERN" value="algorithms.dynamicprogramming.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.searching.verytough" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.searching.verytough.BinarySearchKthSmallestPairDistanceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BinarySearchKthSmallestPairDistanceTest.testBinarySearchKthSmallestPairDistanceSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PracticeProblems" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.searching.verytough.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.searching.verytough" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.searching.verytough.BinarySearchKthSmallestPairDistanceTest" />
-      <option name="METHOD_NAME" value="testBinarySearchKthSmallestPairDistanceSuccess" />
+      <option name="PACKAGE_NAME" value="algorithms.dynamicprogramming.medium" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.dynamicprogramming.medium.MinSplitSubArraysTest" />
+      <option name="METHOD_NAME" value="testMinSplitSubArraysSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchKthSmallestTest.testBinarySearchKthSmallestSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TransactionsTest.testTransactionsSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PracticeProblems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.searching.verytough.*" />
+          <option name="PATTERN" value="datastructures.strings.verytough.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.searching.verytough" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.searching.verytough.BinarySearchKthSmallestTest" />
-      <option name="METHOD_NAME" value="testBinarySearchKthSmallestSuccess" />
+      <option name="PACKAGE_NAME" value="algorithms.dynamicprogramming.medium" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.dynamicprogramming.medium.TransactionsTest" />
+      <option name="METHOD_NAME" value="testTransactionsSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchSquaresTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WordPartitionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PracticeProblems" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="algorithms.searching.tough.*" />
+          <option name="PATTERN" value="algorithms.dynamicprogramming.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="algorithms.searching.tough" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.searching.tough.BinarySearchSquaresTest" />
+      <option name="PACKAGE_NAME" value="algorithms.dynamicprogramming.medium" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.dynamicprogramming.medium.WordPartitionTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordPartitionTest.testWordPartitionSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeProblems" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="algorithms.dynamicprogramming.medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="algorithms.dynamicprogramming.medium" />
+      <option name="MAIN_CLASS_NAME" value="algorithms.dynamicprogramming.medium.WordPartitionTest" />
+      <option name="METHOD_NAME" value="testWordPartitionSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -237,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BinarySearchKthSmallestTest.testBinarySearchKthSmallestSuccess" />
-        <item itemvalue="JUnit.BinarySearchKthSmallestPairDistanceTest" />
-        <item itemvalue="JUnit.BinarySearchKthSmallestPairDistanceTest.testBinarySearchKthSmallestPairDistanceSuccess" />
-        <item itemvalue="JUnit.BinarySearchKthSmallestInTableTest" />
-        <item itemvalue="JUnit.BinarySearchSquaresTest" />
+        <item itemvalue="JUnit.MinSplitSubArraysTest.testMinSplitSubArraysSuccess" />
+        <item itemvalue="JUnit.WordPartitionTest.testWordPartitionSuccess" />
+        <item itemvalue="JUnit.WordPartitionTest" />
+        <item itemvalue="JUnit.MinSplitSubArraysTest" />
+        <item itemvalue="JUnit.TransactionsTest.testTransactionsSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624084281825</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding dynamic programming and other algorithms with unit tests">
+      <created>1624173998890</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1624173998890</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -286,7 +254,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding searching and greedy algorithms with unit tests" />
     <MESSAGE value="Adding algorithms with unit tests and reorganizing the project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding algorithms with unit tests and reorganizing the project" />
+    <MESSAGE value="Adding dynamic programming and other algorithms with unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding dynamic programming and other algorithms with unit tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$searching_in_PracticeProblems.ic" NAME="searching in PracticeProblems Coverage Results" MODIFIED="1623801979027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

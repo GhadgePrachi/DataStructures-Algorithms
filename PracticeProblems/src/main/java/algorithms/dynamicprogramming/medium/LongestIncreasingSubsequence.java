@@ -7,7 +7,7 @@ import java.util.List;
 public class LongestIncreasingSubsequence {
     public static List<Integer> longestIncreasingSubsequence(int[] array) {
         int[] sequences = new int[array.length];
-        Arrays.fill(sequences, Integer.MIN_VALUE);
+        Arrays.fill(sequences, Integer.MAX_VALUE);
         int[] lis = new int[array.length];
         Arrays.fill(lis, 1);
         int maxIndex = 0;
@@ -31,7 +31,7 @@ public class LongestIncreasingSubsequence {
 
     public static List<Integer> getSequence(int[] sequences, int index, int[] array) {
         List<Integer> sequence = new ArrayList<>();
-        while (index != Integer.MIN_VALUE) {
+        while (index != Integer.MAX_VALUE) {
             sequence.add(0, array[index]);
             index = sequences[index];
         }
