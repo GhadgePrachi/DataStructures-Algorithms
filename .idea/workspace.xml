@@ -4,46 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4edaddc-215b-4d05-9937-331f26d69d88" name="Default Changelist" comment="Adding dynamic programming and other algorithms with unit tests">
+    <list default="true" id="f4edaddc-215b-4d05-9937-331f26d69d88" name="Default Changelist" comment="Adding some dynamic programming and binary search algorithms with unit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PracticeProblems/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/GraphTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/GraphTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/LevenshteinDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/LevenshteinDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/MinNumberOfCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/MinCoinsToMakeChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/NumberOfWaysToMakeCoins.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/TotalWaysToMakeChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/Knapsack.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/easy/MaxWeightKnapsack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/LongestCommonSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxDiskStacking.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxTowerOfDisks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/NumberOfPie.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/PiePartition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/verytough/LongestStringChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/datastructures/strings/verytough/LongestStringChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/verytough/MaximizeExpression.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/tough/MaximizeExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/verytough/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/Transactions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/searching/easy/BinarySearchBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/searching/tough/BinarySearchBadVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/GraphTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/GraphTraversalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/LevenshteinDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/LevenshteinDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MinNumberOfCoinsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MinCoinsToMakeChangeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/NumberOfWaysToMakeCoinsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/TotalWaysToMakeChangeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/KnapsackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/easy/MaxWeightKnapsackTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/LongestCommonSubsequenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/LongestCommonSubsequenceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/MaxDiskStackingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/MaxTowerOfDisksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/NumberOfPieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/PiePartitionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/verytough/LongestStringChainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/datastructures/strings/verytough/LongestStringChainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/verytough/MaximizeExpressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/tough/MaximizeExpressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/verytough/TransactionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/dynamicprogramming/medium/TransactionsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/searching/easy/BinarySearchBoundsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/test/java/algorithms/searching/easy/BinarySearchBadVersionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/LongestIncreasingSubsequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/MaxSumIncreasingSubsequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/NumberOfPie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/verytough/LongestStringChain$StringChain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/verytough/LongestStringChain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/searching/easy/BinarySearchBounds.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/easy/MaxSubsetSumTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/medium/NumberOfPieTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/dynamicprogramming/verytough/LongestStringChainTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/test-classes/algorithms/searching/easy/BinarySearchBoundsTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MinSplitSubArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/src/main/java/algorithms/dynamicprogramming/medium/MinSplitSubArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/MinSplitSubArrays.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProblems/target/classes/algorithms/dynamicprogramming/medium/MinSplitSubArrays.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +57,14 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MinSplitSubArraysTest.testMinSplitSubArraysSuccess">
+    <configuration name="All in PracticeProblems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PracticeProblems" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MinSplitSubArraysTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PracticeProblems" />
       <extension name="coverage">
@@ -118,22 +91,6 @@
       <option name="PACKAGE_NAME" value="algorithms.dynamicprogramming.medium" />
       <option name="MAIN_CLASS_NAME" value="algorithms.dynamicprogramming.medium.MinSplitSubArraysTest" />
       <option name="METHOD_NAME" value="testMinSplitSubArraysSuccess" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransactionsTest.testTransactionsSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PracticeProblems" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="datastructures.strings.verytough.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms.dynamicprogramming.medium" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.dynamicprogramming.medium.TransactionsTest" />
-      <option name="METHOD_NAME" value="testTransactionsSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -199,10 +156,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MinSplitSubArraysTest.testMinSplitSubArraysSuccess" />
+        <item itemvalue="JUnit.MinSplitSubArraysTest" />
+        <item itemvalue="JUnit.All in PracticeProblems" />
         <item itemvalue="JUnit.WordPartitionTest.testWordPartitionSuccess" />
         <item itemvalue="JUnit.WordPartitionTest" />
-        <item itemvalue="JUnit.MinSplitSubArraysTest" />
-        <item itemvalue="JUnit.TransactionsTest.testTransactionsSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624173998890</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding some dynamic programming and binary search algorithms with unit tests">
+      <created>1624314986548</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624314986548</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -255,7 +219,8 @@
     <MESSAGE value="Adding searching and greedy algorithms with unit tests" />
     <MESSAGE value="Adding algorithms with unit tests and reorganizing the project" />
     <MESSAGE value="Adding dynamic programming and other algorithms with unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding dynamic programming and other algorithms with unit tests" />
+    <MESSAGE value="Adding some dynamic programming and binary search algorithms with unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding some dynamic programming and binary search algorithms with unit tests" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DataStructuresAndAlgorithms$searching_in_PracticeProblems.ic" NAME="searching in PracticeProblems Coverage Results" MODIFIED="1623801979027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
