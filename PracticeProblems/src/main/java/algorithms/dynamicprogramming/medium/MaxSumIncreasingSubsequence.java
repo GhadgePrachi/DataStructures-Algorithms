@@ -13,7 +13,7 @@ public class MaxSumIncreasingSubsequence {
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < i; j++) {
                 if (array[j] < array[i]) {
-                    if (lis[i] <= lis[j] + array[i]) {
+                    if (lis[i] < lis[j] + array[i]) {
                         lis[i] = lis[j] + array[i];
                         sequences[i] = j;
                     }

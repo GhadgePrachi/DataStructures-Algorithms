@@ -1,5 +1,6 @@
 package algorithms.dynamicprogramming.easy;
 
+import algorithms.dynamicprogramming.easy.MaxSubsetSum;
 import org.junit.Assert;
 import org.junit.Test;
 
