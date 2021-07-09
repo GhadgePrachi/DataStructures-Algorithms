@@ -5,58 +5,61 @@ import java.util.Stack;
 import java.util.TreeMap;
 
 public class Formula {
+    /**Decode String**/
     public String decodeString(String s) {
         Stack<String> chars = new Stack<>();
-        Stack<String> count = new Stack<>();
+        Stack<String> counts = new Stack<>();
         for (int i = 0; i < s.length();) {
             char ch = s.charAt(i);
             if (Character.isDigit(ch)) {
-                String num = "";
+                int startIndex = i;
                 while (Character.isDigit(s.charAt(i))) {
-                    num = num + s.charAt(i);
                     i++;
                 }
-                count.push(num);
+                String num = s.substring(startIndex, i);
+                counts.push(num);
             }else if (ch == '[' || Character.isLetter(ch)) {
-                ch = s.charAt(i);
                 chars.push(String.valueOf(ch));
                 i++;
             }else if (ch == ']') {
-                /*Building the string between opening and closing bracket*/
-                StringBuilder strb = new StringBuilder();
-                while(!chars.isEmpty() && !chars.peek().equals("[")){
-                    String ch1 = chars.pop();
-                    strb.insert(0, ch1);
+                //Compute Element
+                StringBuilder element = new StringBuilder();
+                while(!chars.isEmpty() && !chars.peek().equals("[")) {
+                    element.insert(0, chars.pop());
                 }
 
-                /*Remove  '[' */
                 if(!chars.isEmpty()){
-                    chars.pop();
+                    chars.pop();//Remove  '['
                 }
 
-                /*Repeating string k times*/
-                String str = strb.toString();
-                if(!count.isEmpty()){
-                    int k = Integer.parseInt(count.pop());
-                    while (k > 1) {// append that string appropriate times.
-                        strb.append(str);
-                        k--;
-                    }
+                //Compute Count
+                int count = 1;
+                if(!counts.isEmpty()){
+                    count = Integer.parseInt(counts.pop());
                 }
 
-                /*Push the processed string to chars stack*/
-                chars.push(strb.toString());
+                //Apply Element - Count times
+                StringBuilder subpart = new StringBuilder();
+                while (count > 0) {
+                    subpart.append(element.toString());
+                    count--;
+                }
+                chars.push(subpart.toString());
                 i++;
             }
         }
+        return buildString(chars);
+    }
 
+    private String buildString(Stack<String> chars) {
         StringBuilder sb = new StringBuilder();
         while (!chars.isEmpty()) {
             sb.insert(0, chars.pop());
         }
-        return sb.isEmpty() ? "" : sb.toString();
+        return sb.toString();
     }
 
+    /**Decode Chemical Formula**/
     public String countOfAtoms(String formula) {
         int i = 0, N = formula.length();
         Stack<Map<String, Integer>> stack = new Stack();
@@ -67,30 +70,58 @@ public class Formula {
                 i++;
             } else if (formula.charAt(i) == ')') {
                 Map<String, Integer> top = stack.pop();
-                int iStart = ++i, multiplicity = 1;
-                while (i < N && Character.isDigit(formula.charAt(i))) i++;
-                if (i > iStart) multiplicity = Integer.parseInt(formula.substring(iStart, i));
+                i++;
+                //Get the Multiplicity Factor
+                int startIndex = i, multiplicity = 1;
+                while (i < N && Character.isDigit(formula.charAt(i))) {
+                    i++;
+                }
+                if (i > startIndex) {
+                    multiplicity = Integer.parseInt(formula.substring(startIndex, i));
+                }
+
+                //Apply the Multiplicity Factor
                 for (String c : top.keySet()) {
                     int v = top.get(c);
-                    stack.peek().put(c, stack.peek().getOrDefault(c, 0) + v * multiplicity);
+                    stack.peek().put(c, stack.peek().getOrDefault(c, 0) + (v * multiplicity));
                 }
             } else {
-                int iStart = i++;
-                while (i < N && Character.isLowerCase(formula.charAt(i))) i++;
-                String name = formula.substring(iStart, i);
-                iStart = i;
-                while (i < N && Character.isDigit(formula.charAt(i))) i++;
-                int multiplicity = i > iStart ? Integer.parseInt(formula.substring(iStart, i)) : 1;
+                i++;
+                //Compute Element Name
+                int startIndex = i;
+                while (i < N && Character.isLowerCase(formula.charAt(i))) {
+                    i++;
+                }
+                String name = formula.substring(startIndex, i);
+
+                //Compute Element Count
+                startIndex = i;
+                int multiplicity = 1;;
+                while (i < N && Character.isDigit(formula.charAt(i))) {
+                    i++;
+                }
+                if (i > startIndex) {
+                    Integer.parseInt(formula.substring(startIndex, i));
+                }
+
+                //Add Element Count to existing count
                 stack.peek().put(name, stack.peek().getOrDefault(name, 0) + multiplicity);
             }
         }
 
-        StringBuilder ans = new StringBuilder();
-        for (String name : stack.peek().keySet()) {
-            ans.append(name);
-            int multiplicity = stack.peek().get(name);
-            if (multiplicity > 1) ans.append("" + multiplicity);
+        StringBuilder atom = buildAtom(stack.peek());
+        return atom.toString();
+    }
+
+    private StringBuilder buildAtom(Map<String, Integer> map) {
+        StringBuilder atom = new StringBuilder();
+        for (String name : map.keySet()) {
+            int multiplicity = map.get(name);
+            atom.append(name);
+            if (multiplicity > 1) {
+                atom.append(String.valueOf(multiplicity));
+            }
         }
-        return new String(ans);
+        return atom;
     }
 }

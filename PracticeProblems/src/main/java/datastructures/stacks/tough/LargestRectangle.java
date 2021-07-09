@@ -6,26 +6,26 @@ import java.util.Stack;
 public class LargestRectangle {
     public int largestRectangleUnderSkyline(ArrayList<Integer> buildings) {
         Stack<Integer> increasingHeights = new Stack<>();
-        increasingHeights.push(-1);
         int maxArea = 0, n = buildings.size();
-
         for (int i = 0; i < n; i++) {
             int currentHeight = buildings.get(i);
-
-            while (increasingHeights.peek() != -1 &&
-                    buildings.get(increasingHeights.peek()) >= currentHeight) {
-                int leftIndex = increasingHeights.pop();
-                int width = i - 1 - increasingHeights.peek();
-                int height = buildings.get(leftIndex);
+            while (!increasingHeights.isEmpty() && buildings.get(increasingHeights.peek()) >= currentHeight) {
+                int heightIndex = increasingHeights.pop();
+                int height = buildings.get(heightIndex);
+                int rightIndex = i - 1;
+                int leftIndex = increasingHeights.isEmpty() ? 0 : increasingHeights.peek() + 1;
+                int width = rightIndex - leftIndex + 1;
                 maxArea = Math.max(maxArea, width * height);
             }
             increasingHeights.push(i);
         }
 
-        while (increasingHeights.peek() != -1) {
-            int index = increasingHeights.pop();
-            int width = n - 1 - increasingHeights.peek();
-            int height = buildings.get(index);
+        while (!increasingHeights.isEmpty()) {
+            int heightIndex = increasingHeights.pop();
+            int height = buildings.get(heightIndex);
+            int rightIndex = n - 1;
+            int leftIndex = increasingHeights.isEmpty() ? 0 : increasingHeights.peek() + 1;
+            int width = rightIndex - leftIndex + 1;
             maxArea = Math.max(maxArea, width * height);
         }
         return maxArea;
