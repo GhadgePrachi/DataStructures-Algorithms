@@ -13,7 +13,7 @@ public class ShortestPath {
             isAbsolutePath = true;
         }
 
-        //Process subpaths
+        //Process SubPaths
         String[] subPaths = path.split("/");
         for (String subPath : subPaths) {
             if (subPath.equals("") || subPath.equals(".")){
@@ -25,7 +25,7 @@ public class ShortestPath {
                 } else {
                     if (subPathNames.isEmpty() || subPathNames.peek().equals("..")) {
                         subPathNames.push("..");
-                    } else if (!subPathNames.isEmpty()){
+                    } else {
                         subPathNames.pop();
                     }
                 }
@@ -34,7 +34,7 @@ public class ShortestPath {
             }
         }
 
-        //Process stack
+        //Process Stack
         LinkedList<String> result = new LinkedList<>();
         while (!subPathNames.isEmpty()) {
             String subPathName = subPathNames.pop();
