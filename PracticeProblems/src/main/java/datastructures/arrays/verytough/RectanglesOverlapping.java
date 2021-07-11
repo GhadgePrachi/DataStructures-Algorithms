@@ -12,7 +12,7 @@ public class RectanglesOverlapping {
         return (area1 + area2 - areaI);
     }
 
-    class Point{
+    class Point {
         int x, y;
 
         public Point(int x, int y) {

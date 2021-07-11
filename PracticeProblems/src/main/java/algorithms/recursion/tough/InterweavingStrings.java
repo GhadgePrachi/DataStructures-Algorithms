@@ -13,7 +13,7 @@ public class InterweavingStrings {
     }
 
     public static boolean areInterWoven(String one, String two, String three, int i, int j, HashMap<String, Boolean> canBeWoven) {
-        String key = String.valueOf(i) + ":" + String.valueOf(j);
+        String key = i + ":" + j;
         if (canBeWoven.containsKey(key)) {
             return canBeWoven.get(key);
         }

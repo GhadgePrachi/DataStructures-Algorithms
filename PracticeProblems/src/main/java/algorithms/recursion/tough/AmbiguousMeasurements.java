@@ -9,7 +9,7 @@ public class AmbiguousMeasurements {
     }
 
     public static boolean canMakeMeasures(int[][] measuringCups, int low, int high, HashMap<String, Boolean> canMeasureUsingCups) {
-        String key = String.valueOf(low) + ":" + String.valueOf(high);
+        String key = low + ":" + high;
         if (canMeasureUsingCups.containsKey(key)) {
             return canMeasureUsingCups.get(key);
         }

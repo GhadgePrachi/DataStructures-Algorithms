@@ -119,7 +119,7 @@ public class Formula {
             int multiplicity = map.get(name);
             atom.append(name);
             if (multiplicity > 1) {
-                atom.append(String.valueOf(multiplicity));
+                atom.append(multiplicity);
             }
         }
         return atom;
