@@ -4,35 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SpiralTraverse {
-    public static List<Integer> spiralTraverse(int[][] array) {
-        List<Integer> spiralPrint = new ArrayList<>();
-        int startRow = 0, endRow = array.length - 1;
-        int startColumn = 0, endColumn = array[0].length -1;
-        while(startRow <= endRow && startColumn <= endColumn){
+    public static List<Integer> spiralTraverse(int[][] matrix) {
+        List<Integer> spiralSequence = new ArrayList<>();
+        int startRow = 0, endRow = matrix.length - 1;
+        int startColumn = 0, endColumn = matrix[0].length - 1;
+        while(startRow <= endRow && startColumn <= endColumn) {
             for (int c = startColumn; c <= endColumn; c++) {
-                spiralPrint.add(array[startRow][c]);
+                spiralSequence.add(matrix[startRow][c]);
             }
             startRow++;
 
-            for(int r = startRow; r <= endRow; r++) {
-                spiralPrint.add(array[r][endColumn]);
+            for (int r = startRow; r <= endRow; r++) {
+                spiralSequence.add(matrix[r][endColumn]);
             }
             endColumn--;
 
-            if(startRow <= endRow){
-                for(int c = endColumn ; c >= startColumn; c--) {
-                    spiralPrint.add(array[endRow][c]);
+            if (startRow <= endRow) {
+                for (int c = endColumn ; c >= startColumn; c--) {
+                    spiralSequence.add(matrix[endRow][c]);
                 }
                 endRow--;
             }
 
-            if(startColumn <= endColumn){
+            if (startColumn <= endColumn) {
                 for (int r = endRow; r >= startRow; r--) {
-                    spiralPrint.add(array[r][startColumn]);
+                    spiralSequence.add(matrix[r][startColumn]);
                 }
                 startColumn++;
             }
         }
-        return spiralPrint;
+        return spiralSequence;
     }
 }

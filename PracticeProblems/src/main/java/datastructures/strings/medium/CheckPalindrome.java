@@ -22,7 +22,7 @@ public class CheckPalindrome {
     }
 
     public boolean validPalindrome(String s, int startIndex, int endIndex, int k, HashMap<String, Boolean> map) {
-        String key = String.valueOf(startIndex) + ":" + String.valueOf(endIndex) + ":" + String.valueOf(k);
+        String key = startIndex + ":" + endIndex + ":" + k;
         if (map.containsKey(key)) {
             return map.get(key);
         }

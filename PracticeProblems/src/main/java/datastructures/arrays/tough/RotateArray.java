@@ -3,10 +3,11 @@ package datastructures.arrays.tough;
 import datastructures.arrays.verytough.BasicMath;
 
 public class RotateArray {
-    public void leftRotate(int array[], int k) {
+    public int[] leftRotate(int array[], int k) {
         for (int i = 0; i < k; i++) {
             leftRotateByOne(array, array.length);
         }
+        return array;
     }
     public void leftRotateByOne(int arr[], int n) {
         int temp = arr[0], i;
@@ -16,11 +17,11 @@ public class RotateArray {
         arr[n-1] = temp;
     }
 
-    public void leftRotateUsingReverse(int array[], int k) {
+    public int[] leftRotateUsingReverse(int array[], int k) {
         reverse(array, 0, k);
         reverse(array, k + 1, array.length - 1);
         reverse(array, 0, array.length - 1);
-
+        return array;
     }
 
     public void reverse(int[] array, int start, int end) {
@@ -32,23 +33,23 @@ public class RotateArray {
         }
     }
 
-    public void leftRotateUsingGCD(int[] array, int k) {
-        int n = array.length;
-        k = k % n;
-        int i, j, d, temp;
-        int gcd = new BasicMath().gcd(k, n);
+    public int[] leftRotateUsingGCD(int[] array, int k) {
+        k = k % array.length;
+        int i, j, next, temp;
+        int gcd = new BasicMath().gcd(k, array.length);
         for (i = 0; i < gcd; i++) {
             temp = array[i];
             j = i;
             do{
-                d = j + k;
-                if (d >= n) {
-                    d = d - n;
+                next = j + k;
+                if (next >= array.length) {
+                    next = next % array.length;
                 }
-                array[j] = array[d];
-                j = d;
-            } while (d != i);
+                array[j] = array[next];
+                j = next;
+            } while (j != i);
             array[j] = temp;
         }
+        return array;
     }
 }
