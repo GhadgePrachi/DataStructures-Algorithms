@@ -12,7 +12,7 @@ public class ZizzagTraverse {
         int firstRow = 0;
         for (int col = 0; col < matrix.get(firstRow).size(); col++) {
             List<Integer> diagonalElements = getDiagonals(matrix, firstRow,col);
-            if (down) {
+            if (!down) {
                 Collections.reverse(diagonalElements);
             }
             down = !down;
@@ -22,7 +22,7 @@ public class ZizzagTraverse {
         int lastColumn = matrix.get(firstRow).size() - 1;
         for (int row = 1; row < matrix.size(); row++) {
             List<Integer> diagonalElements = getDiagonals(matrix,row,lastColumn);
-            if (down) {
+            if (!down) {
                 Collections.reverse(diagonalElements);
             }
             down = !down;

@@ -38,7 +38,7 @@ public class KLargest {
         PriorityQueue<Integer> sortedQueue = new PriorityQueue<>();
         for (int element : array) {
             sortedQueue.offer(element);
-            if (sortedQueue.size() == LARGEST_COUNT + 1) {
+            if (sortedQueue.size() > LARGEST_COUNT) {
                 sortedQueue.poll();
             }
         }

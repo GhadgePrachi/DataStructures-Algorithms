@@ -3,6 +3,7 @@ package datastructures.arrays.tough;
 import datastructures.arrays.verytough.BasicMath;
 
 public class RotateArray {
+    /** Rotate LEFT **/
     public int[] leftRotate(int array[], int k) {
         for (int i = 0; i < k; i++) {
             leftRotateByOne(array, array.length);
@@ -45,11 +46,18 @@ public class RotateArray {
                 if (next >= array.length) {
                     next = next % array.length;
                 }
-                array[j] = array[next];
-                j = next;
-            } while (j != i);
+                if (next != i){
+                    array[j] = array[next];
+                    j = next;
+                }
+            } while (next != i);
             array[j] = temp;
         }
         return array;
+    }
+
+    /** Rotate RIGHT **/
+    public int[] rightRotate(int array[], int k) {
+        return leftRotate(array, array.length - k);
     }
 }
