@@ -36,21 +36,21 @@ public class CalendarScheduling {
             Meeting m2 = c2.get(j);
             if (m1.start < m2.start) {
                 merged.add(m1);
-                i += 1;
+                i++;
             } else {
                 merged.add(m2);
-                j += 1;
+                j++;
             }
         }
 
         while(i < c1.size()) {
             merged.add(c1.get(i));
-            i += 1;
+            i++;
         }
 
         while(j < c2.size()) {
             merged.add(c2.get(j));
-            j += 1;
+            j++;
         }
         return merged;
     }

@@ -30,7 +30,7 @@ public class LineThroughPoints {
             int gcd = BasicMath.gcd(Math.abs(xDiff), Math.abs(yDiff));
             xDiff = xDiff / gcd;
             yDiff = yDiff / gcd;
-            if (xDiff < 0) {
+            if (yDiff < 0) {
                 xDiff *= -1;
                 yDiff *= -1;
             }

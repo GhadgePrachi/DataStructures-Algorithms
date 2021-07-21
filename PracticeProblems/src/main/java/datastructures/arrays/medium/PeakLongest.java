@@ -6,10 +6,7 @@ public class PeakLongest {
         for (int i = 1; i < array.length - 1; i++) {
             int start = getLongestOrdered(i, array, false);
             int end = getLongestOrdered(i, array, true);
-            if (start == i || end == i) {
-                continue;
-            }
-            if (longest < end - start + 1){
+            if (start != i && end != i && longest < (end - start + 1)) {
                 longest = end - start + 1;
             }
         }

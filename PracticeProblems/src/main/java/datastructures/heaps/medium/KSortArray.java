@@ -8,23 +8,20 @@ public class KSortArray {
         int[] kSortedArray = new int[array.length];
         int kSortedIndex = -1;
 
-        int i = 0;
-        while (i <= k) {
+        for (int i = 0; i < array.length; i++) {
             int currentElement = array[i];
+            if (i > k) {
+                int minElement = minHeap.poll();
+                kSortedArray[++kSortedIndex] = minElement;
+            }
             minHeap.offer(currentElement);
-            i++;
         }
-        while (i < array.length){
-            int currentElement = array[i];
-            int minElement = minHeap.poll();
-            kSortedArray[++kSortedIndex] = minElement;
-            minHeap.offer(currentElement);
-            i++;
-        }
+
         while (!minHeap.isEmpty()) {
             int minElement = minHeap.poll();
             kSortedArray[++kSortedIndex] = minElement;
         }
+
         return kSortedArray;
     }
 }
