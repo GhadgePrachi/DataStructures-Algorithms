@@ -2,11 +2,11 @@ package datastructures.graph.verytough;
 
 import java.util.*;
 
-public class MergeAccounts {
+public class BuildMergedAccounts {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        List<List<String>> res = new LinkedList<>();
+        List<List<String>> solution = new LinkedList<>();
         if (accounts == null || accounts.size() == 0) {
-            return res;
+            return solution;
         }
 
         Graph graph = buildGraph(accounts);
@@ -15,13 +15,13 @@ public class MergeAccounts {
         for (GraphNode node : graph.getNodes()) {
             list = new LinkedList<>();
             if (!visited.contains(node.emailId)) {
-                union(graph,node, visited,list);
+                searchAndMerge(graph,node, visited,list);
                 Collections.sort(list);
                 list.add(0, node.userName);
-                res.add(list);
+                solution.add(list);
             }
         }
-        return res;
+        return solution;
     }
 
     public Graph buildGraph(List<List<String>> accounts){
@@ -29,22 +29,24 @@ public class MergeAccounts {
 
         for (List<String> account : accounts) {
             String userName = account.get(0);
-            if(account.size()==2) graph.getOrCreateNode(account.get(account.size()-1),userName); //For size = 2
+            if (account.size() == 2) {
+                graph.getOrCreateNode(account.get(account.size() - 1), userName);
+            }
 
             for (int i = 2; i < account.size(); i++) {
-                graph.addEdge(account.get(i),account.get(i-1),userName); //For size > 2
+                graph.addEdge(account.get(i), account.get(i - 1), userName);
             }
         }
         return graph;
     }
 
-    public void union(Graph graph, GraphNode node, Set<String> visited, List<String> list) {
+    public void searchAndMerge(Graph graph, GraphNode node, Set<String> visited, List<String> list) {
         list.add(node.emailId);
         visited.add(node.emailId);
 
         for (GraphNode neighbor : node.getNeighbors()) {
             if (!visited.contains(neighbor.emailId)) {
-                union(graph, neighbor, visited, list);
+                searchAndMerge(graph, neighbor, visited, list);
             }
         }
     }

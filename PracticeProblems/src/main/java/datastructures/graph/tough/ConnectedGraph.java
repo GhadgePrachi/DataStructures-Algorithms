@@ -1,8 +1,8 @@
-package datastructures.graph.verytough;
+package datastructures.graph.tough;
 
 import java.util.Arrays;
 
-public class GraphConnected {
+public class ConnectedGraph {
     public boolean twoEdgeConnectedGraph(int[][] graph) {
         int[] times = new int[graph.length];
         Arrays.fill(times, -1);

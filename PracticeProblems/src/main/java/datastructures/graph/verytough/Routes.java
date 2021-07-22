@@ -2,7 +2,7 @@ package datastructures.graph.verytough;
 
 import java.util.*;
 
-public class MakeRoutes {
+public class Routes {
     public int numBusesToDestination(int[][] routes, int S, int T) {
         Graph graph = constructGraph(routes);
         connectEdges(graph, routes);
@@ -17,7 +17,6 @@ public class MakeRoutes {
             Arrays.sort(routes[i]);
             graph.createNode(i);
         }
-
         return graph;
     }
 
@@ -25,9 +24,8 @@ public class MakeRoutes {
         int nodesCount = routes.length;
 
         for (int i = 0; i < nodesCount; ++i) {
-            for (int j = i + 1; j < nodesCount; ++j){
-
-                if(intersect(routes[i], routes[j])) {//if two buses have common stop/s, then connect!
+            for (int j = i + 1; j < nodesCount; ++j) {
+                if (intersect(routes[i], routes[j])) {
                     graph.getNode(i).addNeighbor(graph.getNode(j));
                     graph.getNode(j).addNeighbor(graph.getNode(i));
                 }
@@ -39,9 +37,13 @@ public class MakeRoutes {
         int i = 0, j = 0;
 
         while (i < A.length && j < B.length) {
-            if (A[i] == B[j]) return true;
-            else if (A[i] < B[j]) i++;
-            else j++;
+            if (A[i] == B[j]) {
+                return true;
+            } else if (A[i] < B[j]) {
+                i++;
+            } else {
+                j++;
+            }
         }
         return false;
     }
@@ -52,25 +54,28 @@ public class MakeRoutes {
         Queue<BusStop> nextToVisit = new LinkedList<>();
         int nodesCount = routes.length;
 
-        for (int i = 0; i < nodesCount; ++i) {
+        for (int i = 0; i < nodesCount; i++) {
             if (Arrays.binarySearch(routes[i], S) >= 0) {
+                nextToVisit.add(new BusStop(i,0));
                 visited.add(i);
-                nextToVisit.add(new BusStop(i,0));//begin search with start node(S)
             }
-            if (Arrays.binarySearch(routes[i], T) >= 0)
+            if (Arrays.binarySearch(routes[i], T) >= 0) {
                 targets.add(i);
+            }
         }
 
         while (!nextToVisit.isEmpty()) {
             BusStop busStop = nextToVisit.poll();
             int currentBusId = busStop.busId,stopsCount = busStop.stopsFromSource;
 
-            if (targets.contains(currentBusId)) return stopsCount+1;
+            if (targets.contains(currentBusId)) {
+                return stopsCount + 1;
+            }
 
             for (GraphNode nextBus : graph.getNode(currentBusId).getNeighbors()) {
                 if (!visited.contains(nextBus.getId())) {
                     visited.add(nextBus.getId());
-                    nextToVisit.offer(new BusStop(nextBus.getId(),stopsCount+1));
+                    nextToVisit.offer(new BusStop(nextBus.getId(),stopsCount + 1));
                 }
             }
 
@@ -91,7 +96,6 @@ public class MakeRoutes {
             if (map.containsKey(vertexId)) {
                 return getNode(vertexId);
             }
-
             GraphNode node = new GraphNode(vertexId);
             nodes.add(node);
             map.put(vertexId, node);
@@ -151,11 +155,11 @@ public class MakeRoutes {
 
     }
 
-    class BusStop{
+    class BusStop {
         int busId;
         int stopsFromSource;
 
-        public BusStop(int busId,int stopsFromSource){
+        public BusStop(int busId,int stopsFromSource) {
             this.busId = busId;
             this.stopsFromSource = stopsFromSource;
         }
