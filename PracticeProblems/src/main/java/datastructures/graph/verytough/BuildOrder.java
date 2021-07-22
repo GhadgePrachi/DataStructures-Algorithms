@@ -101,8 +101,7 @@ public class BuildOrder {
         while (toBeProcessed < order.length) {
             Project current = order[toBeProcessed];
 
-            /* We have a circular dependency since there are no remaining
-             * projects with zero dependencies. */
+            /* We have a circular dependency since there are no remaining projects with zero dependencies. */
             if (current == null) {
                 return null;
             }

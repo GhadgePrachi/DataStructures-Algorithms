@@ -10,17 +10,17 @@ public class CheapestFlight {
         return search(graph, visited, src, dst, k);
     }
 
-    public HashMap<Integer, HashMap<Integer, Integer>> buildGraph(int n, int[][] times) {
+    public HashMap<Integer, HashMap<Integer, Integer>> buildGraph(int n, int[][] flights) {
          HashMap<Integer, HashMap<Integer, Integer>> graph = new HashMap<>();
          for (int i = 0; i < n; i++) {
              HashMap<Integer, Integer> edges = new HashMap<>();
              graph.put(i, edges);
          }
 
-         for(int[] time : times) {
-           int nodeOne = time[0];
-           int nodeTwo = time[1];
-           int weight = time[2];
+         for(int[] flight : flights) {
+           int nodeOne = flight[0];
+           int nodeTwo = flight[1];
+           int weight = flight[2];
 
            HashMap<Integer, Integer> edges = graph.get(nodeOne);
            edges.put(nodeTwo, weight);

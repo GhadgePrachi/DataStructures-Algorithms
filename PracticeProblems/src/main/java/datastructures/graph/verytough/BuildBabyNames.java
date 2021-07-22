@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BabyNames {
+public class BuildBabyNames {
     public class Graph {
         private ArrayList<GraphNode> nodes;
         private HashMap<String, GraphNode> map;

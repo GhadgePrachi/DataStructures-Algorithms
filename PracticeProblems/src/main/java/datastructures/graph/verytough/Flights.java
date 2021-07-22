@@ -2,7 +2,7 @@ package datastructures.graph.verytough;
 
 import java.util.*;
 
-public class FlightConnection {
+public class Flights {
     public static int airportConnections(List<String> airports, List<List<String>> routes, String startingAirport) {
         HashMap<String, Airport> airportGraph = createGraph(airports, routes);
         List<Airport> unreachableAirports = getUnreachableAirports(airportGraph, airports, startingAirport);
@@ -29,8 +29,9 @@ public class FlightConnection {
 
         List<Airport> unreachableAirports = new ArrayList<>();
         for (String airport : airports) {
-            if (visited.contains(airport))
+            if (visited.contains(airport)) {
                 continue;
+            }
             Airport currentAirport = airportGraph.get(airport);
             currentAirport.isReachable = false;
             unreachableAirports.add(currentAirport);
@@ -39,8 +40,9 @@ public class FlightConnection {
     }
 
     public static void searchAirports(HashMap<String, Airport> airportGraph, String airport, Set<String> visited) {
-        if (visited.contains(airport))
+        if (visited.contains(airport)) {
             return;
+        }
 
         visited.add(airport);
         List<String> neighbors = airportGraph.get(airport).neighboringAirports;
@@ -60,11 +62,13 @@ public class FlightConnection {
     }
 
     public static void searchUnreachableAirports(HashMap<String, Airport> airportGraph, String airport, List<String> unreachableAirports, Set<String> visited) {
-        if (airportGraph.get(airport).isReachable)
+        if (airportGraph.get(airport).isReachable) {
             return;
+        }
 
-        if (visited.contains(airport))
+        if (visited.contains(airport)) {
             return;
+        }
 
         visited.add(airport);
         unreachableAirports.add(airport);
@@ -77,14 +81,15 @@ public class FlightConnection {
     public static int getMinRequiredConnections(HashMap<String, Airport> airportGraph, List<Airport> unreachableAirports) {
         int minRequiredConnection = 0;
 
-        Collections.sort(unreachableAirports, (
-                a,b)->b.unreachableAirports.size() - a.unreachableAirports.size());
+        Collections.sort(unreachableAirports, (a,b)->b.unreachableAirports.size() - a.unreachableAirports.size());
 
         for (Airport currentAirport : unreachableAirports) {
-            if (currentAirport.isReachable)
+            if (currentAirport.isReachable) {
                 continue;
-            else
+            } else {
                 minRequiredConnection += 1;
+            }
+
             for (String neighborAirport : currentAirport.unreachableAirports) {
                 airportGraph.get(neighborAirport).isReachable = true;
             }
