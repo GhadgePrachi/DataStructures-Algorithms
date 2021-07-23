@@ -11,16 +11,16 @@ public class Merge {
         }
     }
 
-    public static LinkedList mergeLinkedLists(LinkedList headOne, LinkedList headTwo) {
+    public static LinkedList mergeLinkedLists(LinkedList listOne, LinkedList listTwo) {
         LinkedList current = null, head = null, list = null;
 
-        while (headOne != null && headTwo != null) {
-            if (headOne.value < headTwo.value) {
-                current = headOne;
-                headOne = headOne.next;
+        while (listOne != null && listTwo != null) {
+            if (listOne.value < listTwo.value) {
+                current = listOne;
+                listOne = listOne.next;
             } else {
-                current = headTwo;
-                headTwo = headTwo.next;
+                current = listTwo;
+                listTwo = listTwo.next;
             }
 
             if (list != null) {
@@ -33,12 +33,13 @@ public class Merge {
             }
         }
 
-        if (headOne != null)
-            list.next = headOne;
+        if (listOne != null) {
+            list.next = listOne;
+        }
 
-        if (headTwo != null)
-            list.next = headTwo;
-
+        if (listTwo != null) {
+            list.next = listTwo;
+        }
         return head;
     }
 }

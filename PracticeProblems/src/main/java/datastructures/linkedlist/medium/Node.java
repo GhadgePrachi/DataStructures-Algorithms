@@ -36,8 +36,8 @@ public class Node {
         LinkedList current = head;
         int length = 0;
 
-        while(current!=null){
-            if(length%k==0){
+        while (current!=null) {
+            if (length % k == 0) {
                 modularNode = current;
             }
             length++;

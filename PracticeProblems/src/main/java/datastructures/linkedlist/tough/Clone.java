@@ -13,10 +13,10 @@ public class Clone {
         }
     }
 
-    public RandomListNode copyRandomList(RandomListNode head) {
+    public RandomListNode copyRandomList(RandomListNode list) {
         HashMap<RandomListNode, RandomListNode> map = new HashMap<RandomListNode, RandomListNode>();
 
-        RandomListNode X = head;
+        RandomListNode X = list;
         while (X != null) {
             RandomListNode Y = new RandomListNode(X.label);
             Y.next = null;
@@ -26,7 +26,7 @@ public class Clone {
             X = X.next;
         }
 
-        X = head;
+        X = list;
         while (X != null) {
             RandomListNode current = map.get(X);
             current.next = map.get(X.next);
@@ -35,6 +35,6 @@ public class Clone {
             X = X.next;
         }
 
-        return map.get(head);
+        return map.get(list);
     }
 }

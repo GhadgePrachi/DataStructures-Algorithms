@@ -12,9 +12,9 @@ public class Rearrange {
     }
 
     /** Rearrange k **/
-    public static LinkedList shiftLinkedList(LinkedList head, int k) {
+    public static LinkedList shiftLinkedList(LinkedList list, int k) {
         int length = 1;
-        LinkedList tail = head;
+        LinkedList tail = list;
         while (tail.next != null) {
             tail = tail.next;
             length += 1;
@@ -22,10 +22,10 @@ public class Rearrange {
 
         int offset = Math.abs(k) % length;
         if (offset == 0) {
-            return head;
+            return list;
         }
         int newOffset = k > 0 ? length - offset : offset;
-        LinkedList current = head;
+        LinkedList current = list;
         while (newOffset > 1) {
             current = current.next;
             newOffset -= 1;
@@ -33,17 +33,17 @@ public class Rearrange {
 
         LinkedList newHead = current.next;
         current.next = null;
-        tail.next = head;
+        tail.next = list;
         return newHead;
     }
 
     /** Rearrange by odd-even **/
-    public LinkedList oddEvenList(LinkedList head) {
-        if (head == null || head.next == null) {
-            return head;
+    public LinkedList oddEvenList(LinkedList list) {
+        if (list == null || list.next == null) {
+            return list;
         }
 
-        LinkedList odd = head, even = head.next, evenHead = even;
+        LinkedList odd = list, even = list.next, evenHead = even;
         while (odd!=null && even!=null && odd.next != null && even.next != null ) {
             odd.next = odd.next.next;
             even.next = even.next.next;
@@ -51,28 +51,18 @@ public class Rearrange {
             even = even.next;
         }
         odd.next = evenHead;
-        return head;
+        return list;
     }
 
     /** Rearrange by k **/
-    static class LinkedListPair {
-        LinkedList head;
-        LinkedList tail;
-
-        public LinkedListPair(LinkedList head, LinkedList tail) {
-            this.head = head;
-            this.tail = tail;
-        }
-    }
-
-    public static LinkedList rearrangeLinkedList(LinkedList head, int k) {
+    public static LinkedList rearrangeLinkedList(LinkedList list, int k) {
         LinkedList smallerHead = null;
         LinkedList smallerTail = null;
         LinkedList greaterHead = null;
         LinkedList greaterTail = null;
         LinkedList equalHead = null;
         LinkedList equalTail = null;
-        LinkedList current = head;
+        LinkedList current = list;
 
         while (current != null) {
             LinkedList next = current.next;
@@ -114,13 +104,24 @@ public class Rearrange {
         LinkedList newHead = (headOne == null ? headTwo : headOne);
         LinkedList newTail = (tailTwo == null ? tailOne : tailTwo);
 
-        if (tailOne != null)
+        if (tailOne != null) {
             tailOne.next = headTwo;
+        }
         return new LinkedListPair(newHead, newTail);
     }
 
+    static class LinkedListPair {
+        LinkedList head;
+        LinkedList tail;
+
+        public LinkedListPair(LinkedList head, LinkedList tail) {
+            this.head = head;
+            this.tail = tail;
+        }
+    }
+
     /** Rearrange into two **/
-    public void splitIntoTwo(LinkedList head, LinkedList head1,LinkedList head2){
+    public void splitIntoTwo(LinkedList head, LinkedList headOne,LinkedList headTwo){
         LinkedList fast = head;
         LinkedList slow = head;
 
@@ -129,10 +130,10 @@ public class Rearrange {
             slow = slow.next;
         }
 
-        head1 = head;
-        head2 = slow.next;
+        headOne = head;
+        headTwo = slow.next;
 
-        slow.next = head1;
-        fast.next = head2;
+        slow.next = headOne;
+        fast.next = headTwo;
     }
 }

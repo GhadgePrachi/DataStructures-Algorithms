@@ -11,32 +11,34 @@ public class Palindrome {
         }
     }
 
-    public boolean linkedListPalindrome(LinkedList head) {
-        LinkedList fast = head;
-        LinkedList slow = head;
+    public boolean linkedListPalindrome(LinkedList list) {
+        LinkedList fast = list;
+        LinkedList slow = list;
 
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }
 
-        if (fast != null)
-            slow = slow.next;//ignore odd middle
+        if (fast != null) {
+            slow = slow.next; //ignore odd middle
+        }
 
         LinkedList reverse = reverseLinkedList(slow);
-        LinkedList current = head;
+        LinkedList current = list;
 
         while (reverse != null) {
-            if (reverse.value != current.value)
+            if (reverse.value != current.value) {
                 return false;
+            }
             reverse = reverse.next;
             current = current.next;
         }
         return true;
     }
 
-    public static LinkedList reverseLinkedList(LinkedList head) {
-        LinkedList current = head;
+    public static LinkedList reverseLinkedList(LinkedList list) {
+        LinkedList current = list;
         LinkedList previous = null;
         while (current != null) {
             LinkedList next = current.next;
