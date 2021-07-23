@@ -20,27 +20,26 @@ public class Intersection {
         }
     }
 
-    public static LinkedList findIntersection(LinkedList list1, LinkedList list2) {
-        if (list1 == null || list2 == null) {
+    public static LinkedList findIntersection(LinkedList listOne, LinkedList listTwo) {
+        if (listOne == null || listTwo == null) {
             return null;
         }
 
-        Result result1 = getTailAndSize(list1);
-        Result result2 = getTailAndSize(list2);
-        if (result1.tail != result2.tail) {
+        Result resultOne = getTailAndSize(listOne);
+        Result resultTwo = getTailAndSize(listTwo);
+        if (resultOne.tail != resultTwo.tail) {
             return null;
         }
 
-        LinkedList shorter = result1.size < result2.size ? list1 : list2;
-        LinkedList longer = result1.size < result2.size ? list2 : list1;
+        LinkedList shorter = resultOne.size < resultTwo.size ? listOne : listTwo;
+        LinkedList longer = resultOne.size < resultTwo.size ? listTwo : listOne;
 
-        longer = getKthNode(longer, Math.abs(result1.size - result2.size));
+        longer = getKthNode(longer, Math.abs(resultOne.size - resultTwo.size));
 
         while (shorter != longer) {
             shorter = shorter.next;
             longer = longer.next;
         }
-
         return longer;
     }
 
@@ -56,8 +55,8 @@ public class Intersection {
         return new Result(current, size);
     }
 
-    public static LinkedList getKthNode(LinkedList head, int k) {
-        LinkedList current = head;
+    public static LinkedList getKthNode(LinkedList list, int k) {
+        LinkedList current = list;
         while (k > 0 && current != null) {
             current = current.next;
             k--;

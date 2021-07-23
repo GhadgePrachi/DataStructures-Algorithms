@@ -11,18 +11,18 @@ public class Swap {
         }
     }
 
-    public LinkedList nodeSwap(LinkedList head) {
-        LinkedList node = head;
+    public LinkedList nodeSwap(LinkedList list) {
+        LinkedList node = list;
         while (node != null && node.next != null) {
             nodeSwap(node,node.next);
             node = node.next.next;
         }
-        return head;
+        return list;
     }
 
-    public void nodeSwap(LinkedList node1, LinkedList node2) {
-        int temp = node1.value;
-        node1.value = node2.value;
-        node2.value = temp;
+    public void nodeSwap(LinkedList nodeOne, LinkedList nodeTwo) {
+        int temp = nodeOne.value;
+        nodeOne.value = nodeTwo.value;
+        nodeTwo.value = temp;
     }
 }

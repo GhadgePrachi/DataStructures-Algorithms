@@ -11,9 +11,9 @@ public class Cycle {
     }
 
     /** Find Loop **/
-    public static LinkedList findLoop(LinkedList head) {
-        LinkedList slow = head;
-        LinkedList fast = head;
+    public static LinkedList findLoop(LinkedList list) {
+        LinkedList slow = list;
+        LinkedList fast = list;
 
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
@@ -26,7 +26,7 @@ public class Cycle {
         if (fast == null || fast.next == null)
             return null;
 
-        slow = head;
+        slow = list;
         while (slow != fast) {
             slow = slow.next;
             fast = fast.next;
@@ -35,8 +35,8 @@ public class Cycle {
     }
 
     /** Find Loop start **/
-    public LinkedList getCycleStart(LinkedList head){
-        LinkedList fast = head,slow = head;
+    public LinkedList getCycleStart(LinkedList list){
+        LinkedList fast = list, slow = list;
 
         while (fast == null || fast.next == null) {
             fast = fast.next.next;
@@ -51,11 +51,36 @@ public class Cycle {
             return null;
         }
 
-        slow = head;
+        slow = list;
         while (slow != fast) {
             slow = slow.next;
             fast = fast.next;
         }
         return fast;
+    }
+
+    /** Find Loop length **/
+    public int getCycleLength(LinkedList list){
+        LinkedList fast = list, slow = list;
+
+        while (fast == null || fast.next == null) {
+            fast = fast.next.next;
+            slow = slow.next;
+
+            if (fast == slow) {
+                break;
+            }
+        }
+
+        int cycleLength = 0;
+        if (fast == null || fast.next == null) {
+            return cycleLength;
+        }
+
+        do {
+            slow = slow.next;
+            cycleLength++;
+        } while (slow != fast);
+        return cycleLength;
     }
 }

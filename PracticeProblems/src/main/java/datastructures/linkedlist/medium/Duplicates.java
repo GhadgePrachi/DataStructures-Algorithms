@@ -13,10 +13,10 @@ public class Duplicates {
         }
     }
 
-    public LinkedList removeDuplicatesFromLinkedList(LinkedList linkedList) {
+    public LinkedList removeDuplicatesFromLinkedList(LinkedList list) {
         HashSet<Integer> uniqueElements = new HashSet<>();
-        uniqueElements.add(linkedList.value);
-        LinkedList current = linkedList;
+        uniqueElements.add(list.value);
+        LinkedList current = list;
         while (current.next != null) {
             if (uniqueElements.contains(current.next.value)) {
                 current.next = current.next.next;
@@ -25,6 +25,6 @@ public class Duplicates {
                 current = current.next;
             }
         }
-        return linkedList;
+        return list;
     }
 }

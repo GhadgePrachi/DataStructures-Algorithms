@@ -11,8 +11,8 @@ public class Reverse {
         }
     }
 
-    public static LinkedList reverseLinkedList(LinkedList head) {
-        LinkedList current = head;
+    public static LinkedList reverseLinkedList(LinkedList list) {
+        LinkedList current = list;
         LinkedList previous = null;
         while (current != null) {
             LinkedList next = current.next;
