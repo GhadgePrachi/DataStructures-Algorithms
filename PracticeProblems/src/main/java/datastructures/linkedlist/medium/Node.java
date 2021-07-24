@@ -11,9 +11,9 @@ public class Node {
     }
 
     /** Get Fractional Node **/
-    public static LinkedList getKFactorial(LinkedList head, int k) {
+    public static LinkedList getKFactorial(LinkedList list, int k) {
+        LinkedList current = list;
         LinkedList fractionalNode = null;
-        LinkedList current = head;
         int length = 0;
 
         while (current != null) {
@@ -31,9 +31,9 @@ public class Node {
     }
 
     /** Get Modular Node **/
-    public static LinkedList getKModularNodeFromStart(LinkedList head, int k){
+    public static LinkedList getKModularNodeFromStart(LinkedList list, int k){
+        LinkedList current = list;
         LinkedList modularNode = null;
-        LinkedList current = head;
         int length = 0;
 
         while (current!=null) {
@@ -46,26 +46,34 @@ public class Node {
         return  modularNode;
     }
 
+    /** Get Kth Node from start **/
+    public static LinkedList getKthNodeFromStart(LinkedList list, int k) {
+        LinkedList current = list;
+        while (k > 0 && current != null) {
+            current = current.next;
+            k--;
+        }
+        return current;
+    }
+
     /** Get Kth Node from end **/
-    public static void removeKthNodeFromEnd(LinkedList head, int k) {
-        LinkedList first = head;
-        LinkedList second = head;
-        int K = k;
-        while (first != null && K > 0) {
+    public static LinkedList removeKthNodeFromEnd(LinkedList list, int k) {
+        LinkedList first = list;
+        LinkedList second = list;
+        int K = 1;
+        while (first != null && K < k) {
             first = first.next;
-            K -= 1;
+            K++;
         }
 
         if (first == null) {
-            head.value = head.next.value;
-            head.next = head.next.next;
-            return;
+            return first;
         }
 
         while (first.next != null) {
             first = first.next;
             second = second.next;
         }
-        second.next = second.next.next;
+        return second;
     }
 }

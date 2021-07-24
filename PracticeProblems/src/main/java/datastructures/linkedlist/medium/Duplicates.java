@@ -13,17 +13,18 @@ public class Duplicates {
         }
     }
 
-    public LinkedList removeDuplicatesFromLinkedList(LinkedList list) {
+    public LinkedList removeDuplicates(LinkedList list) {
         HashSet<Integer> uniqueElements = new HashSet<>();
-        uniqueElements.add(list.value);
         LinkedList current = list;
-        while (current.next != null) {
-            if (uniqueElements.contains(current.next.value)) {
-                current.next = current.next.next;
+        LinkedList prev = null;
+        while (current != null) {
+            if (uniqueElements.contains(current.value)) {
+                prev.next = current.next;
             } else {
-                uniqueElements.add(current.next.value);
-                current = current.next;
+                uniqueElements.add(current.value);
+                prev = current;
             }
+            current = current.next;
         }
         return list;
     }

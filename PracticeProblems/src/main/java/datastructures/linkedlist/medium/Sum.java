@@ -12,12 +12,12 @@ public class Sum {
     }
 
     /** Sum from Left - Right **/
-    public LinkedList sumOfLinkedLists(LinkedList linkedListOne, LinkedList linkedListTwo) {
+    public LinkedList sumOfLinkedLists(LinkedList listOne, LinkedList listTwo) {
         int carry = 0, val = 0;
         LinkedList list = null, head = null;
 
-        while (linkedListOne != null || linkedListTwo != null || carry != 0) {
-            int sum = (linkedListOne == null ? 0 : linkedListOne.value) + (linkedListTwo == null ? 0 : linkedListTwo.value) + carry;
+        while (listOne != null || listTwo != null || carry != 0) {
+            int sum = (listOne == null ? 0 : listOne.value) + (listTwo == null ? 0 : listTwo.value) + carry;
             val = sum % 10;
             carry = sum / 10;
             LinkedList current = new LinkedList(val);
@@ -31,12 +31,12 @@ public class Sum {
                 head = current;
             }
 
-            if (linkedListOne != null) {
-                linkedListOne = linkedListOne.next;
+            if (listOne != null) {
+                listOne = listOne.next;
             }
 
-            if (linkedListTwo != null) {
-                linkedListTwo = linkedListTwo.next;
+            if (listTwo != null) {
+                listTwo = listTwo.next;
             }
         }
         return head;

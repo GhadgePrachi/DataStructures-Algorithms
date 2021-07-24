@@ -71,7 +71,7 @@ public class LinkedList {
             DoublyLinkedListNode current = head;
             while (current != null && position > 1) {
                 current = current.next;
-                position -= 1;
+                position--;
             }
             if (current != null) {
                 insertBefore(current, nodeToInsert);
@@ -84,10 +84,10 @@ public class LinkedList {
             DoublyLinkedListNode current = head;
             while (current != null) {
                 DoublyLinkedListNode nodeToRemove = current;
-                current = current.next;
                 if (nodeToRemove.value == value) {
                     remove(nodeToRemove);
                 }
+                current = current.next;
             }
         }
 

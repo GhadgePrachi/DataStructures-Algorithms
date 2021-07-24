@@ -3,35 +3,33 @@ package datastructures.linkedlist.tough;
 import java.util.HashMap;
 
 public class Clone {
-    class  RandomListNode{
-        int label;
-        RandomListNode next;
-        RandomListNode random;
+    class  RandomList{
+        int value;
+        RandomList next;
+        RandomList random;
 
-        RandomListNode(int l){
-            this.label = l;
+        public RandomList(int value){
+            this.value = value;
         }
     }
 
-    public RandomListNode copyRandomList(RandomListNode list) {
-        HashMap<RandomListNode, RandomListNode> map = new HashMap<RandomListNode, RandomListNode>();
+    public RandomList copy(RandomList list) {
+        HashMap<RandomList, RandomList> map = new HashMap<>();
 
-        RandomListNode X = list;
+        RandomList X = list;
         while (X != null) {
-            RandomListNode Y = new RandomListNode(X.label);
+            RandomList Y = new RandomList(X.value);
             Y.next = null;
             Y.random = null;
             map.put(X, Y);
-
             X = X.next;
         }
 
         X = list;
         while (X != null) {
-            RandomListNode current = map.get(X);
-            current.next = map.get(X.next);
-            current.random = map.get(X.random);
-
+            RandomList Y = map.get(X);
+            Y.next = map.get(X.next);
+            Y.random = map.get(X.random);
             X = X.next;
         }
 
