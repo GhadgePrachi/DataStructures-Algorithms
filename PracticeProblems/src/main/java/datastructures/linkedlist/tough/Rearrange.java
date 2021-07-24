@@ -1,5 +1,7 @@
 package datastructures.linkedlist.tough;
 
+import datastructures.linkedlist.medium.Intersection;
+
 public class Rearrange {
     static class LinkedList {
         public int value;
@@ -11,57 +13,11 @@ public class Rearrange {
         }
     }
 
-    /** Rearrange k **/
-    public static LinkedList shiftLinkedList(LinkedList list, int k) {
-        int length = 1;
-        LinkedList tail = list;
-        while (tail.next != null) {
-            tail = tail.next;
-            length += 1;
-        }
-
-        int offset = Math.abs(k) % length;
-        if (offset == 0) {
-            return list;
-        }
-        int newOffset = k > 0 ? length - offset : offset;
-        LinkedList current = list;
-        while (newOffset > 1) {
-            current = current.next;
-            newOffset -= 1;
-        }
-
-        LinkedList newHead = current.next;
-        current.next = null;
-        tail.next = list;
-        return newHead;
-    }
-
-    /** Rearrange by odd-even **/
-    public LinkedList oddEvenList(LinkedList list) {
-        if (list == null || list.next == null) {
-            return list;
-        }
-
-        LinkedList odd = list, even = list.next, evenHead = even;
-        while (odd!=null && even!=null && odd.next != null && even.next != null ) {
-            odd.next = odd.next.next;
-            even.next = even.next.next;
-            odd = odd.next;
-            even = even.next;
-        }
-        odd.next = evenHead;
-        return list;
-    }
-
     /** Rearrange by k **/
-    public static LinkedList rearrangeLinkedList(LinkedList list, int k) {
-        LinkedList smallerHead = null;
-        LinkedList smallerTail = null;
-        LinkedList greaterHead = null;
-        LinkedList greaterTail = null;
-        LinkedList equalHead = null;
-        LinkedList equalTail = null;
+    public static LinkedList rearrange(LinkedList list, int k) {
+        LinkedList smallerHead = null, smallerTail = null;
+        LinkedList greaterHead = null, greaterTail = null;
+        LinkedList equalHead = null, equalTail = null;
         LinkedList current = list;
 
         while (current != null) {
@@ -120,6 +76,32 @@ public class Rearrange {
         }
     }
 
+    /** Shift By k **/
+    public static LinkedList shift(LinkedList list, int k) {
+        int length = 1;
+        LinkedList tail = list;
+        while (tail.next != null) {
+            tail = tail.next;
+            length++;
+        }
+
+        int offset = Math.abs(k) % length;
+        if (offset == 0) {
+            return list;
+        }
+        int newOffset = k > 0 ? length - offset : offset;
+        LinkedList current = list;
+        while (newOffset > 1) {
+            current = current.next;
+            newOffset--;
+        }
+
+        LinkedList newHead = current.next;
+        current.next = null;
+        tail.next = list;
+        return newHead;
+    }
+
     /** Rearrange into two **/
     public void splitIntoTwo(LinkedList head, LinkedList headOne,LinkedList headTwo){
         LinkedList fast = head;
@@ -135,5 +117,22 @@ public class Rearrange {
 
         slow.next = headOne;
         fast.next = headTwo;
+    }
+
+    /** Rearrange by odd-even **/
+    public LinkedList alternateOddEven(LinkedList list) {
+        if (list == null || list.next == null) {
+            return list;
+        }
+
+        LinkedList odd = list, even = list.next, evenHead = even;
+        while (odd!=null && even!=null && odd.next != null && even.next != null ) {
+            odd.next = odd.next.next;
+            even.next = even.next.next;
+            odd = odd.next;
+            even = even.next;
+        }
+        odd.next = evenHead;
+        return list;
     }
 }

@@ -44,7 +44,9 @@ public class Intersection {
     }
 
     public static Result getTailAndSize(LinkedList list) {
-        if (list == null) return null;
+        if (list == null) {
+            return null;
+        }
 
         int size = 1;
         LinkedList current = list;

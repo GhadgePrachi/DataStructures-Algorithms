@@ -11,7 +11,7 @@ public class Palindrome {
         }
     }
 
-    public boolean linkedListPalindrome(LinkedList list) {
+    public boolean isPalindrome(LinkedList list) {
         LinkedList fast = list;
         LinkedList slow = list;
 
@@ -24,7 +24,7 @@ public class Palindrome {
             slow = slow.next; //ignore odd middle
         }
 
-        LinkedList reverse = reverseLinkedList(slow);
+        LinkedList reverse = reverse(slow); //can use stack as well, add slow value in while loop above and check in while loop below
         LinkedList current = list;
 
         while (reverse != null) {
@@ -37,7 +37,7 @@ public class Palindrome {
         return true;
     }
 
-    public static LinkedList reverseLinkedList(LinkedList list) {
+    public static LinkedList reverse(LinkedList list) {
         LinkedList current = list;
         LinkedList previous = null;
         while (current != null) {

@@ -11,8 +11,8 @@ public class Merge {
         }
     }
 
-    public static LinkedList mergeLinkedLists(LinkedList listOne, LinkedList listTwo) {
-        LinkedList current = null, head = null, list = null;
+    public static LinkedList merge(LinkedList listOne, LinkedList listTwo) {
+        LinkedList current, head = null, list = null;
 
         while (listOne != null && listTwo != null) {
             if (listOne.value < listTwo.value) {
